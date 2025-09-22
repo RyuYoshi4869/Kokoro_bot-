@@ -1,3 +1,17 @@
+import Link from "next/link";   // ← これを一番上に追加！
+
+export default function Home() {
+  return (
+    <main>
+      <h1>Next.js</h1>
+      <p>Get started by editing app/page.tsx</p>
+
+      {/* 👇 この1行を追加 */}
+      <p><Link href="/chat">こころBotチャットへ →</Link></p>
+    </main>
+  );
+}
+
 'use client';
 import React, { useState } from 'react';
 
